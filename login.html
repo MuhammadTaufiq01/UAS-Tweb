@@ -1,39 +1,73 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
+	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	<!-- title -->
 	<title>Login Page</title>
+
+	<!-- css -->
 	<link rel="stylesheet" href="ini.css">
+	<!-- icon css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	
-	
+
 </head>
-<body> 
+
+<body>
 	<div class="login">
-	
-	<div class="avatar">
-	<i class="fa fa-user"></i>
+
+		<!-- rounded icon -->
+		<div class="avatar">
+			<i class="fa fa-user"></i>
+		</div>
+
+		<br>
+		<!-- title -->
+		<h2> Login ke WebDuaSatu </h2>
+
+		<!-- input -->
+		<!-- Fungsi table sebagai grid -->
+		<table>
+			<tr class="box-login">
+				<td>
+					<i class="fas fa-envelope"></i>
+				</td>
+				<td>
+					<input type="text" placeholder="Email/Username">
+				</td>
+			</tr>
+
+			<tr class="box-login">
+				<td>
+					<i class="fas fa-lock"></i>
+				</td>
+				<td>
+					<input type="text" placeholder="Password">
+				</td>
+			</tr>
+		</table>
+
+		<!-- button -->
+		<button type="submit" class="btn-login">
+			Login
+		</button>
+
+		<br>
+
+		<!-- registrasi -->
+		<div class="bottom">
+			<a> Belum punya akun?</a>
+			<a href="Daftar.html">Daftar</a>
+		</div>
 	</div>
-	
-	<h2> Login ke WebDuaSatu </h2>
-	
-	<div class="box-login">
-		<i class="fas fa-envelope"></i>
-		<input type="text" placeholder="Email/Username">
-	</div>
-	
-	<div class="box-login">
-		<i class="fas fa-lock"></i>
-		<input type="text" placeholder="Password">
-	</div>
-	
-	<button type="submit" class="btn-login">
-		Login
-	</button>
-	
-	<div class="bottom">
-	<a> Belum punya akun?</a>
-	<a href="Daftar.html">Daftar</a>
-	
-	
+</body>
+
+</html>
