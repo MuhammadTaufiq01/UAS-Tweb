@@ -1,0 +1,65 @@
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking {
+	font-family: 'Montserrat', sans-serif;
+	background-color : #ffac0f;
+	background-size: cover;
+	background-position: center;
+}
+
+#booking::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+ 
+
+
+.booking-form .form-label {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 5px;
+	display: block;
+	text-transform: uppercase;
+	
+	
+}
+
+
+
+.booking-form .submit-btn {
+	
+	color:  #ffac0f; 
+	background-color :black;
+	font-weight: 700;
+	height: 50px;
+	border: none;
+	width: 100%;
+	display: block;
+	border-radius: 9px;
+	text-transform: uppercase;
+	text-align : center;
+}
+
+
+
+.form-btn{
+	padding-top : 20px;
+	
+}	
