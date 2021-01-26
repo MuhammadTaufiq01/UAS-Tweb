@@ -55,6 +55,17 @@ info panel p{
 /* working space*/
 .card {
 	margin-top: 120px;
+	height: 500px;
+}
+
+.img-border{
+	display: block;
+	height: 200px;
+	overflow: hidden;
+}
+
+.card-img-top{
+	width: 100%;
 }
 
 /*utility*/
