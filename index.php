@@ -75,9 +75,10 @@ if (isset($_POST["submit"])) {
 			<?php endif; ?>
 
 			<!-- button -->
-			<a href="home.php" type="submit" name="submit" class="btn-login">
+			<a class="btn btn-login" href="home.php" role="button" name="submit" style="text-decoration:none;">Login</a>
+			<!-- <button href="home.php" type="submit" name="submit" class="btn-login">
 				Login
-			</a>
+			</button> -->
 		</div>
 
 		<br>
