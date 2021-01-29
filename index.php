@@ -1,11 +1,11 @@
-<?php 
+<?php
 
-if(isset($_POST["submit"])){
-	if($_POST["usern"] == "user" && $_POST["passw"] == "1234"){
+if (isset($_POST["submit"])) {
+	if ($_POST["usern"] == "user" && $_POST["passw"] == "1234") {
 		header("location: home.php");
 		exit;
 	} else {
-		$error=true;
+		$error = true;
 	}
 }
 ?>
@@ -48,10 +48,10 @@ if(isset($_POST["submit"])){
 			<!-- Fungsi table sebagai grid -->
 			<table>
 				<tr class="box-login">
-					<?php if(isset($_POST["submit"])) : ?>
-						<?php if($error) :?>
-						<p>Username atau password salah</p><?php endif; ?>
-						<?php endif; ?>
+					<?php if (isset($_POST["submit"])) : ?>
+						<?php if ($error) : ?>
+							<p>Username atau password salah</p><?php endif; ?>
+					<?php endif; ?>
 					<td>
 						<i class="fas fa-envelope"></i>
 					</td>
@@ -70,14 +70,14 @@ if(isset($_POST["submit"])){
 				</tr>
 			</table>
 
-			<?php if(isset($error)) : ?>
+			<?php if (isset($error)) : ?>
 				<p style="color:red; font-style: italic;">Username atau password salah</p>
-			<?php endif;?>
+			<?php endif; ?>
 
 			<!-- button -->
-			<button type="submit" name="submit" class="btn-login">
+			<a href="home.php" type="submit" name="submit" class="btn-login">
 				Login
-			</button>
+			</a>
 		</div>
 
 		<br>
