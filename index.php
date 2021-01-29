@@ -48,8 +48,9 @@ if(isset($_POST["submit"])){
 			<!-- Fungsi table sebagai grid -->
 			<table>
 				<tr class="box-login">
-					<?php if($error=true) : ?>
-						<p>Username atau password salah</p>
+					<?php if(isset($_POST["submit"])) : ?>
+						<?php if($error) :?>
+						<p>Username atau password salah</p><?php endif; ?>
 						<?php endif; ?>
 					<td>
 						<i class="fas fa-envelope"></i>
