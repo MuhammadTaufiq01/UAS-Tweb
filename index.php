@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
 		<br>
 		<!-- title -->
 		<h2> Login ke WebDuaSatu </h2>
-		<div action="" method="post">
+		<div action="home.php" method="post">
 			<!-- input -->
 			<!-- Fungsi table sebagai grid -->
 			<table>
