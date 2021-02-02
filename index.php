@@ -43,15 +43,14 @@ if (isset($_POST["submit"])) {
 		<br>
 		<!-- title -->
 		<h2> Login ke WebDuaSatu </h2>
-		<div action="" method="post">
+		<form action="" method="post">
 			<!-- input -->
 			<!-- Fungsi table sebagai grid -->
 			<table>
 				<tr class="box-login">
-					<?php if (isset($_POST["submit"])) : ?>
-						<?php if ($error) : ?>
-							<p>Username atau password salah</p><?php endif; ?>
-					<?php endif; ?>
+					<!-- <?php if (isset($error)) : ?>
+							<p>Username atau password salah</p>
+					<?php endif; ?> -->
 					<td>
 						<i class="fas fa-envelope"></i>
 					</td>
@@ -75,10 +74,10 @@ if (isset($_POST["submit"])) {
 			<?php endif; ?>
 
 			<!-- button -->
-				<button type="submit" name="submit" class="btn-login">
-					Login
-				</button>
-		</div>
+			<button type="submit" name="submit" class="btn-login">
+				Login
+			</button>
+		</form>
 
 		<br>
 

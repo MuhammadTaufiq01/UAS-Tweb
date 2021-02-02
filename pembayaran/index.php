@@ -1,11 +1,11 @@
-<?php
+<!-- <?php
 if (!isset($_POST["submit"])) {
 	if (!isset($_POST["namabarang"], $_POST["harga"], $_POST["namabarang"], $_POST["jumlah"], $_POST["total"], $_POST["diskon"])) {
-		header("location: ../pemesanan.php");
-		exit;
+		// header("location: ../pemesanan.php");
+		// exit;
 	}
 }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">

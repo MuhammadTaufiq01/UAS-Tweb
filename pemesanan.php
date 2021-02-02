@@ -29,16 +29,18 @@ if (isset($_POST["submit"])) {
   <hr>
 
 
-  <div action="" method="post">
+  <form action="" method="post">
     <table class="table table-borderless" style="width: 500px;">
       <tr>
         <td><label>Nama Barang</label></td>
-        <?php if (!isset($_POST("namabarang"))) : ?>
-          <style>
-            #pilih-desain {
-              color: red;
-            }
-          </style>
+        <?php if (isset($error)) : ?>
+          <?php if (!isset($_POST("namabarang"))) : ?>
+            <style>
+              #pilih-desain {
+                color: red;
+              }
+            </style>
+          <?php endif; ?>
         <?php endif; ?>
         <td><select class="form-select" onchange="pilihan()" id="pilih-desain" name="namabarang" aria-label="Default select example">
             <option selected></option>
@@ -59,13 +61,14 @@ if (isset($_POST["submit"])) {
 
       <tr>
         <td><label>Jumlah</label></td>
-        
-        <?php if (!isset($_POST("jumlah"))) : ?>
-          <style>
-            #jumlah {
-              color: red;
-            }
-          </style>
+        <?php if (isset($error)) : ?>
+          <?php if (!isset($_POST("jumlah"))) : ?>
+            <style>
+              #jumlah {
+                color: red;
+              }
+            </style>
+          <?php endif; ?>
         <?php endif; ?>
         <td><input type="text" oninput="hasil()" id="jumlah" name="jumlah"></td>
       </tr>
@@ -102,8 +105,10 @@ if (isset($_POST["submit"])) {
     </table>
 
     <hr><br>
-    <a style="margin: 30px; width: 200px;" class="btn btn-warning" name="submit" role="button" href="pembayaran/index.html">Pesan</a>
-  </div>
+    <button style="margin: 30px; width: 200px;" class="btn btn-warning" name="submit" role="button" href="pembayaran/index.html">
+      Pesan
+    </button>
+  </form>
 
   <script type="text/javascript" src="pemesanan.js"></script>
 
