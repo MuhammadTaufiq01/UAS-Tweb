@@ -1,5 +1,5 @@
 <?php
-
+$error = false;
 if (isset($_POST["submit2"])) {
   if (isset($_POST["namabarang"], $_POST["harga"], $_POST["namabarang"], $_POST["jumlah"], $_POST["total"], $_POST["diskon"])) {
     header("location: pembayaran/index.php");
@@ -33,7 +33,7 @@ if (isset($_POST["submit2"])) {
     <table class="table table-borderless" style="width: 500px;">
       <tr>
         <td><label>Nama Barang</label></td>
-        <?php if (isset($error)) : ?>
+        <?php if ($error) : ?>
           <?php if (!isset($_POST("namabarang"))) : ?>
             <style>
               #pilih-desain {
@@ -61,7 +61,7 @@ if (isset($_POST["submit2"])) {
 
       <tr>
         <td><label>Jumlah</label></td>
-        <?php if (isset($error)) : ?>
+        <?php if ($error) : ?>
           <?php if (!isset($_POST("jumlah"))) : ?>
             <style>
               #jumlah {
