@@ -33,7 +33,7 @@ if (isset($_POST["submit2"])) {
     <table class="table table-borderless" style="width: 500px;">
       <tr>
         <td><label>Nama Barang</label></td>
-        <?php if (isset($error)) : ?>
+        <?php if (isset($error)) { ?>
           <?php if (isset($_POST("namabarang"))) {
           } else { ?>
             <style>
@@ -42,7 +42,7 @@ if (isset($_POST["submit2"])) {
               }
             </style>
           <?php } ?>
-        <?php endif; ?>
+        <?php } ?>
         <td><select class="form-select" onchange="pilihan()" id="pilih-desain" name="namabarang" aria-label="Default select example">
             <option selected></option>
             <option value="Desain Logo gambar">Desain Logo gambar</option>
@@ -62,7 +62,7 @@ if (isset($_POST["submit2"])) {
 
       <tr>
         <td><label>Jumlah</label></td>
-        <?php if (isset($error)) : ?>
+        <?php if (isset($error)) { ?>
           <?php if (isset($_POST("jumlah"))) {
           } else { ?>
             <style>
@@ -71,7 +71,7 @@ if (isset($_POST["submit2"])) {
               }
             </style>
           <?php } ?>
-        <?php endif; ?>
+        <?php } ?>
         <td><input type="text" oninput="hasil()" id="jumlah" name="jumlah"></td>
       </tr>
 
