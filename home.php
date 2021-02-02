@@ -1,9 +1,9 @@
 <?php 
 
-if(!isset($_POST["submit"])){
-  $error= true;
-  header("location: index.php");
-}
+// if(!isset($_POST["submit"])){
+//   $error= true;
+//   header("location: index.php");
+// }
 ?>
 <!doctype html>
 <html lang="en">
