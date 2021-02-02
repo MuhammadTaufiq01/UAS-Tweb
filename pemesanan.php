@@ -34,13 +34,13 @@ if (isset($_POST["submit2"])) {
       <tr>
         <td><label>Nama Barang</label></td>
         <?php if ($error) : ?>
-          <?php if (!isset($_POST("namabarang"))) : ?>
+          <?php if (isset($_POST("namabarang"))) {} else { ?>
             <style>
               #pilih-desain {
                 color: red;
               }
             </style>
-          <?php endif; ?>
+          <?php } ?>
         <?php endif; ?>
         <td><select class="form-select" onchange="pilihan()" id="pilih-desain" name="namabarang" aria-label="Default select example">
             <option selected></option>
@@ -62,13 +62,13 @@ if (isset($_POST["submit2"])) {
       <tr>
         <td><label>Jumlah</label></td>
         <?php if ($error) : ?>
-          <?php if (!isset($_POST("jumlah"))) : ?>
+          <?php if (isset($_POST("jumlah"))) {} else { ?>
             <style>
               #jumlah {
                 color: red;
               }
             </style>
-          <?php endif; ?>
+          <?php } ?>
         <?php endif; ?>
         <td><input type="text" oninput="hasil()" id="jumlah" name="jumlah"></td>
       </tr>
