@@ -33,16 +33,6 @@ if (isset($_POST["submit2"])) {
     <table class="table table-borderless" style="width: 500px;">
       <tr>
         <td><label>Nama Barang</label></td>
-        <?php if (isset($error)) {
-          if (isset($_POST("namabarang"))) {
-          } else {
-            echo "<style>
-            #pilih-desain {
-              color: red;
-            }
-          </style>";
-          }
-        } ?>
         <td><select class="form-select" onchange="pilihan()" id="pilih-desain" name="namabarang" aria-label="Default select example">
             <option selected></option>
             <option value="Desain Logo gambar">Desain Logo gambar</option>
@@ -62,16 +52,6 @@ if (isset($_POST["submit2"])) {
 
       <tr>
         <td><label>Jumlah</label></td>
-        <?php if (isset($error)) {
-          if (isset($_POST("jumlah"))) {
-          } else {
-            echo "<style>
-            #jumlah {
-              color: red;
-            }
-          </style>";
-          }
-        } ?>
         <td><input type="text" oninput="hasil()" id="jumlah" name="jumlah"></td>
       </tr>
 
@@ -103,6 +83,9 @@ if (isset($_POST["submit2"])) {
           <p id="bayar" name="bayar"></p>
         </td>
       </tr>
+      <tr><td><?php if ($error==true) :?>
+        <p style="color:red; font-style: italic;">Ada data yang belum diisi.</p>
+          <?php endif; ?></td></tr>
 
     </table>
 
