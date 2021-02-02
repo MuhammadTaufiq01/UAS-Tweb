@@ -83,14 +83,14 @@ if (isset($_POST["submit2"])) {
           <p id="bayar" name="bayar"></p>
         </td>
       </tr>
-      <tr><td><?php if ($error==true) :?>
+      <tr><td><?php if (isset($error)) :?>
         <p style="color:red; font-style: italic;">Ada data yang belum diisi.</p>
           <?php endif; ?></td></tr>
 
     </table>
 
     <hr><br>
-    <button style="margin: 30px; width: 200px;" class="btn btn-warning" name="submit2" role="button" href="pembayaran/index.html">
+    <button type = "submit" style="margin: 30px; width: 200px;" class="btn btn-warning" name="submit2">
       Pesan
     </button>
   </form>
