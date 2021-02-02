@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST["submit"])) {
+if (isset($_POST["submit2"])) {
   if (isset($_POST["namabarang"], $_POST["harga"], $_POST["namabarang"], $_POST["jumlah"], $_POST["total"], $_POST["diskon"])) {
     header("location: pembayaran/index.php");
     exit;
@@ -105,7 +105,7 @@ if (isset($_POST["submit"])) {
     </table>
 
     <hr><br>
-    <button style="margin: 30px; width: 200px;" class="btn btn-warning" name="submit" role="button" href="pembayaran/index.html">
+    <button style="margin: 30px; width: 200px;" class="btn btn-warning" name="submit2" role="button" href="pembayaran/index.html">
       Pesan
     </button>
   </form>
