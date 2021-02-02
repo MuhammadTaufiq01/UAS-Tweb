@@ -33,8 +33,9 @@ if (isset($_POST["submit2"])) {
     <table class="table table-borderless" style="width: 500px;">
       <tr>
         <td><label>Nama Barang</label></td>
-        <?php if ($error) : ?>
-          <?php if (isset($_POST("namabarang"))) {} else { ?>
+        <?php if (isset($error)) : ?>
+          <?php if (isset($_POST("namabarang"))) {
+          } else { ?>
             <style>
               #pilih-desain {
                 color: red;
@@ -61,8 +62,9 @@ if (isset($_POST["submit2"])) {
 
       <tr>
         <td><label>Jumlah</label></td>
-        <?php if ($error) : ?>
-          <?php if (isset($_POST("jumlah"))) {} else { ?>
+        <?php if (isset($error)) : ?>
+          <?php if (isset($_POST("jumlah"))) {
+          } else { ?>
             <style>
               #jumlah {
                 color: red;

@@ -1,5 +1,5 @@
 <!-- <?php
-if (($_POST["namabarang"]==null) ||  ($_POST["harga"]==null) ||  ($_POST["namabarang"]==null) ||  ($_POST["jumlah"]==null) || ($_POST["total"] == null) ||  ($_POST["diskon"]==null)) {
+if (isset($_POST["namabarang"], $_POST["harga"], $_POST["namabarang"], $_POST["jumlah"], $_POST["total"], $_POST["diskon"])) {
 		header("location: ../pemesanan.php");
 		exit;
 }
