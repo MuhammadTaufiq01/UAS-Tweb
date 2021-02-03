@@ -1,6 +1,6 @@
 function bayar(){
     var ketik = prompt("Ketik BAYAR", "");
-  if (confirm(ketik === "BAYAR")) {
+  if (ketik == "BAYAR") {
     alert("Pembayaran Berhasil. Lihat riwayat pembayaran di menu user.");
     header("location: ../home.php");
   } else {
