@@ -1,5 +1,6 @@
 <!-- <?php
-if (!isset($_POST["namabarang"]) || !isset($_POST["jumlah"])) {
+if (!isset($_POST["submit2"])) {
+// if (!isset($_POST["namabarang"]) || !isset($_POST["jumlah"])) {
 		header("location: ../pemesanan.php");
 		exit;
 }

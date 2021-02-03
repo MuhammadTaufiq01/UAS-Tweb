@@ -88,7 +88,7 @@ if (isset($_POST["submit2"])) {
     </table>
 
     <hr><br>
-    <button type = "submit" style="margin: 30px; width: 200px;" class="btn btn-warning" name="submit2">
+    <button type = "submit" style="margin: 30px; width: 200px;" class="btn-login btn-warning" name="submit2">
       Pesan
     </button>
   </form>
