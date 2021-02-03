@@ -1,6 +1,9 @@
 <?php 
 
-if($_POST["usern"] != "user" || $_POST["passw"] != "1234"){
+if(!isset($_POST["usern"]) || !isset ($_POST["passw"])){
+  $error= true;
+  header("location: index.php");
+} else if ($_POST["usern"] != "user" && $_POST["passw"] != "1234"){
   $error= true;
   header("location: index.php");
 }
