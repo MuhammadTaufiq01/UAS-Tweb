@@ -1,13 +1,11 @@
 <?php
 $error = false;
 if (isset($_POST["submit2"])) {
-  if (isset($_POST["namabarang"]) || isset ($_POST["harga"]) || isset ($_POST["namabarang"]) || isset ($_POST["jumlah"]) || isset ($_POST["total"]) || isset ($_POST["diskon"])) {
     header("location: pembayaran/index.php");
     exit;
   } else {
     $error = true;
   }
-}
 ?>
 
 <!doctype html>
