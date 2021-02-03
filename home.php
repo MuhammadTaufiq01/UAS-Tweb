@@ -1,9 +1,9 @@
 <?php 
 
-// if(!isset($_POST["submit"])){
-//   $error= true;
-//   header("location: index.php");
-// }
+if($_POST["usern"] != "user" || $_POST["passw"] != "1234"){
+  $error= true;
+  header("location: index.php");
+}
 ?>
 <!doctype html>
 <html lang="en">
