@@ -64,7 +64,7 @@
         <div class="navbar-nav ml-auto">
           <!-- <a class="nav-item nav-link" href="#">Dashboard</a> -->
           <a class="nav-item nav-link" href="profil/profilUAS.html">About US</a>
-          <a class=" btn btn-warning tombol" href="login.html">User</a>
+          <a class=" btn btn-warning tombol" href="profiluser.html">User</a>
         </div>
       </div>
     </div>
