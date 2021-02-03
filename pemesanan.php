@@ -1,6 +1,6 @@
 <?php
 $error = false;
-if (isset($_POST["submit2"])) {
+if (isset($_POST["submit"])) {
     header("location: pembayaran/index.php");
     exit;
   } else {
@@ -88,9 +88,9 @@ if (isset($_POST["submit2"])) {
     </table>
 
     <hr><br>
-    <button type = "submit" style="margin: 30px; width: 200px;" class="btn-login btn-warning" name="submit2">
-      Pesan
-    </button>
+    <button type="submit" name="submit" class="btn-login btn-warning" style="margin: 30px; width: 200px;">
+				Pesan
+			</button>
   </form>
 
   <script type="text/javascript" src="pemesanan.js"></script>
