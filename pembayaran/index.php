@@ -1,9 +1,9 @@
 <!-- <?php
-if (!isset($_POST["submit"])) {
-// if (!isset($_POST["namabarang"]) || !isset($_POST["jumlah"])) {
-		header("location: ../pemesanan.php");
-		exit;
-}
+// if (!isset($_POST["submit"])) {
+// // if (!isset($_POST["namabarang"]) || !isset($_POST["jumlah"])) {
+// 		header("location: ../pemesanan.php");
+// 		exit;
+// }
 ?> -->
 
 <!DOCTYPE html>
